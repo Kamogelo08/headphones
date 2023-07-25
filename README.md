@@ -1,0 +1,1 @@
+we are learning software, hard but definately worth it.
