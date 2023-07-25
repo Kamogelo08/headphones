@@ -1,0 +1,96 @@
+* { margin: 0cm;
+    padding: 0cm;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.banner{ width: 100%;
+    height: 20cm;
+    background-image: -o-linear-gradient(rgba(0,0,0,0,76),rgba(0,0,0,0,76)),url(background.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+.navbar{
+    width: 80%;
+    margin: auto;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 115px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: center;
+    display: inline-block;
+    margin: 1 25px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: solid;
+    color: beige;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content:'' ;
+    height: 5px;
+    width: 0%;
+    background: #009688;
+    position: absolute;
+    left: 2;
+    bottom: 2px;
+    transition: 1s;
+}
+.navbar ul li:hover::after{
+    width: 95%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-75%);
+    text-align: justify;
+    color: aliceblue;
+}
+.content h1{
+    font-size: 65px;
+    margin-top: 75px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 30px;
+}
+button{
+    width: 300px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 25px;
+    border-radius: 30px;
+    font-weight: bolder;
+    border: 3px solid blueviolet;
+    background: transparent;
+    color: antiquewhite;
+    cursor: pointer;
+    position: sticky;
+    overflow: auto;
+}
+span{
+    background: whitesmoke;
+    height: 85%;
+    width: 120%;
+    border-radius: 20px;
+    position: absolute;
+    left: 2;
+    bottom: 2;
+    z-index: -2;
+    transition: 1.5s;
+}
+button:hover span{
+    width: 120%;
+}
+button:hover{
+    border: none;
+}
